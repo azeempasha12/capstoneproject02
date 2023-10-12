@@ -24,4 +24,4 @@ function calculateBMI(weight, height) {
   const weightInKg2= 45;
   const heightInM2 = 1.60;
   const bmiClassification2 = calculateBMI(weightInKg2, heightInM2);
-  console.log(bmiClassification2);
+  console.log(bmiClassification2) ;
