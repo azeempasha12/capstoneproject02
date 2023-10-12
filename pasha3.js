@@ -11,6 +11,6 @@ function isPalindrome(str) {
     return cleanStr === reversedStr;
 }
 
-// Example usage:
+// Example  usage:
 console.log(isPalindrome("racecar")); // true
 console.log(isPalindrome("hello")); // false
