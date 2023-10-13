@@ -1,0 +1,1 @@
+return fahrenheit.toFixed(2)

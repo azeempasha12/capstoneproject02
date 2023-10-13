@@ -13,6 +13,6 @@ function convertTemperature(temperature, unit) {
 }
 
 // Example usage:
-console.log(convertTemperature(25, "C")); // Output: "25.00 F"
-console.log(convertTemperature(-40, "F")); // Output: -40.00 C"
-console.log(convertTemperature(0, "k")); //
+console.log(convertTemperature(25, "C")); // Output: "77.00 F"
+console.log(convertTemperature(-40, "F")); // Output: "-40.00 C"
+console.log(convertTemperature(0, "k")); // Output: "Invalid unit. Use 'C' for Celsius or 'F' for Fahrenheit."
