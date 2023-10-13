@@ -1,1 +1,1 @@
-return fahrenheit.toFixed(2)
+const reversedStr = cleit("").reverse().join("");anStr.spl
