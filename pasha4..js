@@ -6,7 +6,7 @@ function isPalindrome(str) {
     const cleanStr = lowerCaseStr.replace(/[^a-z0-9]/g, "");
 
     // Step 3: Compare the modified string with its reverse
-    const reversedStr = cleanStr.split("").reverse().join("");
+    const reversedStr = cleit("").reverse().join("");anStr.spl
 
     return cleanStr === reversedStr;
 }
