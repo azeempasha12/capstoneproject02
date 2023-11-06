@@ -1,1 +1,7 @@
-const reversedStr = cleit("").reverse().join("");anStr.spl
+
+        return false;
+    }
+}
+
+
+console.log(isPalindrome(num));
