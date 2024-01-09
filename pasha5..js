@@ -1,31 +1,19 @@
-function fizzBuzz(n) {
-    const result = [];
+var findErrorNums = function(nums) {
+    const hashmap = new Map();
+    const output = [];
+    let maxValue = 0;
 
-for (let i = 1; i <= n; i++) {
-let output = "";
-switch (true) {
-case i % 3 === 0 && i % 4 === 0:
-output = "FizzBuzz";
-break;
-case i % 3 === 0:
-output = "Fizz";
-case i % 4 === 0:
-output = "Buzz";
-break;
-default:
-output = i.toString();
-}
-result.push(output);
-}
-return result;
-}
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        if (hashmap.has(num)) output.push(num);
+        hashmap.set(num, (hashmap.get(num) || 0) + 1); // Update the count in the map
+        maxValue = Math.max(maxValue, num);
+    }
 
-// Example 1:
-const n1 = 12;
-const output1 = fizzBuzz(n1);
-console.log(output1);
+    for (let i = 1; i <= maxValue; i++) {
+        const count = hashmap.get(i) || 0; // Get the count from the map
+        if (count === 0) output.push(i);
+    } 
 
-// Example 2:
-const n2 = 5;
-const output2 = fizzBuzz(n2);
-console.log(output2);
+    return output;
+};
